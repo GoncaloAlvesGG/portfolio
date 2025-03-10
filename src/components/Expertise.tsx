@@ -76,7 +76,7 @@ function Expertise() {
                         <FontAwesomeIcon icon={faShieldHalved} size="3x" />
                         <h3>Redes e Cybersecurity</h3>
                         <p>
-                        Adquiri conhecimentos na cibersegurança durante os meus tempos livres de forma autodidata, e redes em ambiente escolar. Como testes de intrusão, análise de tráfego, segmentação e roteamento de redes.</p>
+                        Adquiri conhecimentos na cibersegurança durante os meus tempos livres de forma autodidata, e redes em ambiente escolar. Como testes de intrusão, análise de tráfego, segmentação e encaminhamento.</p>
                         <div className="flex-chips">
                             <span className="chip-title">Stack:</span>
                             {labelsThird.map((label, index) => (
