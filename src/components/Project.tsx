@@ -1,4 +1,3 @@
-import React from "react";
 import grolab from '../assets/images/grolab.png';
 import django from '../assets/images/django.png';
 import visit_sps from '../assets/images/visit_sps.png';
@@ -6,6 +5,8 @@ import websoft from '../assets/images/WebSoft.png';
 import appsoft from '../assets/images/AppSoft.png';
 import wordpress from '../assets/images/wordpress.png';
 import '../assets/styles/Project.scss';
+import pdf from '../assets/pdf/relatorio.pdf';
+
 
 function Project() {
     return (
@@ -13,8 +14,8 @@ function Project() {
             <h1>Projetos Realizados</h1>
             <div className="projects-grid">
                 <div className="project">
-                    <a href="" target="_blank" rel="noreferrer"><img src={grolab} className="zoom" alt="thumbnail" width="100%" /></a>
-                    <a href="" target="_blank" rel="noreferrer"><h2>GroLab Mobile Data Viewer</h2></a>
+                    <a href={pdf} target="_blank" rel="noreferrer"><img src={grolab} className="zoom" alt="thumbnail" width="100%" /></a>
+                    <a href={pdf} target="_blank" rel="noreferrer"><h2>GroLab Mobile Data Viewer</h2></a>
                     <p>Aplicação móvel em Flutter para a gestão do sistema GroLab, integração de comunicação Modbus TCP/IP e SQLite para gestão de módulos, áreas, visualização de câmaras via live feed e entre outros.</p>
                 </div>
                 <div className="project">
