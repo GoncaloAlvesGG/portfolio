@@ -10,6 +10,7 @@ import {
 } from "./components";
 import FadeIn from './components/FadeIn';
 import './index.scss';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
     const [mode, setMode] = useState<string>('dark');
@@ -30,6 +31,7 @@ function App() {
         <div className={`main-container ${mode === 'dark' ? 'dark-mode' : 'light-mode'}`}>
             <Navigation parentToChild={{ mode }} modeChange={handleModeChange} />
             <FadeIn transitionDuration={700}>
+                <Analytics mode="production" />;
                 <Main />
                 <Expertise />
                 <Education />
